@@ -1,0 +1,25 @@
+.main{
+    margin-top: 10%;
+    color:#344fa1;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.contain{
+background-color: #94d0cc;
+
+}
+
+.extraCol{
+    background-color: #e4efe7;
+
+
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+  }
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

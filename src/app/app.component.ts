@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = 'Welcome to my first Angular Page';
+  isAllow:boolean = false;
+  serverMessage:string;
+  serverCreateStatus: string;
+  isServerOn = false;
+  servers = ['leo1', 'leo2']
+
+  constructor(){
+    setTimeout(() => {
+      this.isAllow = true;
+    }, 2000);
+  }
+  createServer(){
+    this.isServerOn = true;
+    this.servers.push(this.serverMessage)
+
+  }
+  // updateServerName(event: Event){
+  //   this.serverMessage = (<HTMLInputElement>event.target).value;
+  // }
 }

@@ -1,1 +1,42 @@
-<p>The Server Component</p>
+<!-- <p [ngStyle]="{backgroundColor: getColor()}">The Server id {{serverId}} is running on port {{ getServer() }}. Server is {{serverStatus}}</p> -->
+
+<div class="container-fluid contain">
+    <div class="row main">
+        <div class="col-2 text-center extraCol"></div>
+        <div class="col-4 text-center p-3">
+            <h3>Welcome to Bank NotAScam</h3>
+            <div id="emailHelp" class="form-text">{{titleMsg}}</div>
+            <div id="emailHelp" class="form-text">{{subTitle}}</div>
+            <button [hidden]="hideBtn1" (click)="setupNewAcc()" class="btn btn-primary me-5 mt-1">{{button1}}</button>
+            <button [hidden]="hideBtn2" (click)="setupNewAcc()" class="btn btn-primary">{{button2}}</button>
+            <form class="mt-2">
+                <div class="mb-3">
+                  <label for="title1" class="form-label">{{inputTitle1}}</label>
+                  <input [hidden]='hideInput1' type="text" class="form-control" id="title1" aria-describedby="title1">
+                </div>
+                <div class="mb-3">
+                  <label for="title2" class="form-label">{{inputTitle2}}</label>
+                  <input [hidden]='hideInput2' type="text" class="form-control" id="title2">
+                </div>
+                <div class="mb-3">
+                    <label for="title3" class="form-label">{{inputTitle3}}</label>
+                    <input [hidden]='hideInput3' type="text" class="form-control" id="title3">
+                  </div>
+                  <div class="mb-3">
+                    <label for="title4" class="form-label">{{inputTitle4}}</label>
+                    <input [hidden]='hideInput4' type="text" class="form-control" id="title4">
+                  </div>
+                  <div class="mb-3">
+                    <label for="title5" class="form-label">{{inputTitle5}}</label>
+                    <input [hidden]='hideInput5' type="text" class="form-control" id="title5">
+                  </div>
+                <button (click)="submit()" [hidden]='hideSubmitBtn' type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="col-4 text-center p-3">
+            <h3>Result</h3>
+            <img [class]="fade" [hidden] = "hideImg" [src]="imagePath" alt="result"/>
+        </div>
+        <div class="col-2 text-center extraCol"></div>
+    </div>
+</div>

@@ -1,3 +1,18 @@
 <!-- <input type="text" [(ngModel)]="name"/>
 <h1>{{name}}</h1>  -->
-<app-servers></app-servers>
+<!-- <input class="form-control" type="text" (input) = "updateServerName($event)"/> -->
+<!-- <app-servers *ngFor="let server of servers"></app-servers>
+<input class="form-control" type="text" [(ngModel)] = "serverMessage"/>
+<h1 *ngIf="isServerOn; else server">The server is online now. Server Name: {{serverMessage}}</h1>
+<ng-template #server>
+    <h1>There is no server at this moment</h1>
+</ng-template>
+    <div class="col-4">
+    </div>
+    <div class="col-md-auto">
+        <button (click)="createServer()" [disabled] = "!isAllow" class="btn btn-secondary ">Add Server</button>
+        <p [innerText] = "isAllow" style="color: white;"></p>
+    </div>
+    <div class="col-4">
+    </div> -->
+    <app-server></app-server>
